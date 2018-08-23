@@ -1,0 +1,10 @@
+
+
+
+<%= @person.name %><br/>
+
+<%= @person.address %><br/>
+
+<% @person.magazines.each do |magazine| %>
+  <%= magazine.name %><br/>
+<% end %>

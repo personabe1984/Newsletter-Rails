@@ -27,7 +27,9 @@ ActiveRecord::Schema.define(version: 2018_08_23_174508) do
   end
 
   create_table "subscriptions", force: :cascade do |t|
-    t.string "delivery"
+    t.string "delivery_date"
+    t.integer "person_id"
+    t.integer "magazine_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

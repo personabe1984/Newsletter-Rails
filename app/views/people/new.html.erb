@@ -1,0 +1,13 @@
+person should always have a name
+
+show all the list of the magazines and check the ones that
+they want to subscribe to
+
+<%= form_for(@person) do |f| %>
+  <%= f.label :name %><br/>
+  <%= f.text_field :name%><br/>
+  <%= f.label :address %><br/>
+  <%= f.text_field :address %><br/>
+  <%= f.collection_check_boxes(:magazine_ids, Magazine.all, :id, :name)%>
+  <%= f.submit%>
+<% end %>

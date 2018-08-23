@@ -1,5 +1,5 @@
 <h3>People</h3>
 
 <% @people.each do |person| %>
-  <li><%= person.name %></li>
+  <li><%= link_to person.name, person_path(person) %></li>
 <% end %>
